@@ -22,7 +22,7 @@ def get_book_text(path):
         return f.read()
 
 
-main(sys.argv[1])
-if sys.argv[1] == None:
+if len(sys.argv) < 2:
     print("Usage: python3 main.py <path_to_book>")
     sys.exit(1)
+main(sys.argv[1])
