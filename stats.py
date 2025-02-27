@@ -12,3 +12,8 @@ def get_chars_dict(text):
         else:
             chars[lowered] = 1
     return chars
+
+
+def sort_on_char(text):
+    char_dict = get_chars_dict(text)
+    return dict(sorted(char_dict.items(), key=lambda item: item[1], reverse=True))
