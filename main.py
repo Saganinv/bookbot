@@ -20,6 +20,7 @@ def main(book_path):
 def get_book_text(path):
     with open(path) as f:
         return f.read()
+    #testing 123
 
 
 if len(sys.argv) < 2:
